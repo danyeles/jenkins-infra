@@ -2,6 +2,7 @@ node {
     stage('Generate Jobs') {
 
         def apps = readYaml file: 'apps.yaml'
+        echo "APPS FOUND: ${apps.apps}"
 
         apps.apps.each { app ->
 
