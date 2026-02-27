@@ -9,3 +9,5 @@ apps:
     config: configs/qbittorrent-nox.yaml
   - name: prowlarr
     config: configs/prowlarr.yaml
+  - name: readarr
+    config: configs/readarr.yaml
