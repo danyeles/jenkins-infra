@@ -1,6 +1,10 @@
 node {
     stage('Generate Jobs') {
 
+        deleteDir()   // ← wipes the workspace safely, no hardcoding
+
+        checkout scm  // ← uses the repo/branch already configured in the job
+
         def apps = readYaml file: 'apps.yaml'
         echo "APPS FOUND: ${apps.apps}"
         echo "RAW YAML:"
