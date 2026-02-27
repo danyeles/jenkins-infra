@@ -1,6 +1,6 @@
-====================================================================
+==============================
 README #2 — jenkins-infra
-====================================================================
+==============================
 
 Jenkins Infrastructure — Seed Job & App Manifest
 This repository contains the seed pipeline and the manifest that defines which deployment jobs Jenkins should generate.
