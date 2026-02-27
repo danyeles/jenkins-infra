@@ -13,3 +13,9 @@ apps:
     config: configs/readarr.yaml
   - name: bazarr
     config: configs/bazarr.yaml
+  - name: lidarr
+    config: configs/lidarr.yaml
+  - name: homepage
+    config: configs/homepage.yaml
+  - name: jellyfin
+    config: configs/jellyfin.yaml
