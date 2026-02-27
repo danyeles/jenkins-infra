@@ -1,34 +1,23 @@
 apps:
   - name: sonarr
     config: configs/sonarr.yaml
-    
   - name: radarr
     config: configs/radarr.yaml
-    
   - name: jellyseerr
     config: configs/jellyseerr.yaml
-    
   - name: qbittorrent-nox
     config: configs/qbittorrent-nox.yaml
-    
   - name: prowlarr
     config: configs/prowlarr.yaml
-    
   - name: readarr
     config: configs/readarr.yaml
-    
   - name: bazarr
     config: configs/bazarr.yaml
-    
   - name: lidarr
     config: configs/lidarr.yaml
-    
   - name: homepage
     config: configs/homepage.yaml
-    
   - name: jellyfin
     config: configs/jellyfin.yaml
-    
   - name: pinchflat
     config: configs/pinchflat.yaml
-
