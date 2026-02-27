@@ -3,6 +3,8 @@ node {
 
         def apps = readYaml file: 'apps.yaml'
         echo "APPS FOUND: ${apps.apps}"
+        echo "RAW YAML:"
+        sh "sed -n '1,200p' apps.yaml | sed -e 's/\t/[TAB]/g'"
 
         apps.apps.each { app ->
 
