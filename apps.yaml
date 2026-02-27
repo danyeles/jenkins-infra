@@ -7,3 +7,5 @@ apps:
     config: configs/jellyseerr.yaml
   - name: qbittorrent-nox
     config: configs/qbittorrent-nox.yaml
+  - name: prowlarr
+    config: configs/prowlarr.yaml
