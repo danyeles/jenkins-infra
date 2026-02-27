@@ -97,23 +97,3 @@ Removing an App
 1. Remove the entry from apps.yaml
 2. Run the seed job
 3. Delete the corresponding job manually in Jenkins
-
-Summary
-This deployment system provides:
-- Zero duplication
-- YAML-driven configuration
-- Automatic job generation
-- Consistent Docker deployment logic
-- Easy scaling for new apps
-
-```
----
-
-If you want, I can also generate:
-
-- A ZIP‑ready folder structure  
-- A combined “master documentation” file  
-- A diagram (Mermaid or ASCII) showing the full architecture  
-
-Just tell me what format you want.
-```
