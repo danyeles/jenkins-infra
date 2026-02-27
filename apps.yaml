@@ -21,3 +21,5 @@ apps:
     config: configs/jellyfin.yaml
   - name: pinchflat
     config: configs/pinchflat.yaml
+  - name: qbittorrent-password
+    config: configs/qbittorrent-password.yaml
