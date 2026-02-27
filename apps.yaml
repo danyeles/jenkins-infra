@@ -19,3 +19,6 @@ apps:
     config: configs/homepage.yaml
   - name: jellyfin
     config: configs/jellyfin.yaml
+  - name: pinchflat
+    config: configs/pinchflat.yaml
+
