@@ -1,20 +1,30 @@
-def apps = readYaml file: 'apps.yaml'
+pipeline {
+    agent any
 
-apps.apps.each { app ->
+    stages {
+        stage('Generate Jobs') {
+            steps {
+                script {
+                    def apps = readYaml file: 'apps.yaml'
 
-    pipelineJob("deploy-${app.name}") {
-
-        description("Auto‑generated job for ${app.name}")
-
-        definition {
-            cps {
-                script("""
-                    @Library('my-shared-lib') _
-                    appPipeline(
-                        appName: '${app.name}',
-                        configFile: '${app.config}'
-                    )
-                """.stripIndent())
+                    apps.apps.each { app ->
+                        jobDsl scriptText: """
+                            pipelineJob("deploy-${app.name}") {
+                                definition {
+                                    cps {
+                                        script(\"\"\"
+                                            @Library('my-shared-lib') _
+                                            appPipeline(
+                                                appName: '${app.name}',
+                                                configFile: '${app.config}'
+                                            )
+                                        \"\"\".stripIndent())
+                                    }
+                                }
+                            }
+                        """
+                    }
+                }
             }
         }
     }
