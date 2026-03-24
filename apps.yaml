@@ -3,8 +3,8 @@ apps:
     config: configs/sonarr.yaml
   - name: radarr
     config: configs/radarr.yaml
-  - name: jellyseerr
-    config: configs/jellyseerr.yaml
+  - name: seerr
+    config: configs/seerr.yaml
   - name: qbittorrent-nox
     config: configs/qbittorrent-nox.yaml
   - name: prowlarr
