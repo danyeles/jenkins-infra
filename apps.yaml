@@ -23,3 +23,11 @@ apps:
     config: configs/pinchflat.yaml
   - name: qbittorrent-password
     config: configs/qbittorrent-password.yaml
+  - name: audiobookshelf
+    config: configs/audiobookshelf.yaml
+  - name: flaresolverr
+    config: configs/flaresolverr.yaml
+  - name: tdarr
+    config: configs/tdarr.yaml
+  - name: sortarr
+    config: configs/sortarr.yaml
